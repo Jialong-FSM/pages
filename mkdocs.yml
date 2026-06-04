@@ -1,0 +1,18 @@
+site_name: 玻璃资料网站
+
+theme:
+  name: material
+  language: zh
+
+nav:
+  - 首页: index.md
+  - 玻璃文档: bolli.md
+  - 七年级: 七年级.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
