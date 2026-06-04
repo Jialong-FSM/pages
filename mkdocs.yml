@@ -1,19 +1,51 @@
-site_name: 玻璃资料网站
+site_name: 我的信息展示页面
 
 theme:
   name: material
-  language: zh
+  language: zh                 # 将搜索框、下一页等全局界面汉化
+  
+  # 1. 开启高级视觉特性（让网页动起来）
+  features:
+    - navigation.tabs          # 将左侧平淡的菜单移到顶部，变成高大上的“导航标签页”
+    - navigation.sections      # 侧边栏分组显示，层级更清晰
+    - navigation.top           # 右下角自动出现“回到顶部”的悬浮小火箭按钮
+    - header.autohide          # 往下滚动时顶栏自动隐藏，往上滚动时优雅滑出
+    - search.suggest           # 搜索框支持智能输入联想
+    - search.highlight         # 搜索结果关键词高亮显示
 
+  # 2. 注入色彩调色盘（亮色/暗色一键切换）
+  palette:
+    # 亮色模式（白天）
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal            # 主题色改为优雅的蓝绿色（非常适合科技/资料类网站）
+      accent: deep orange      # 悬浮高亮色使用亮眼的深橙色
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到暗黑模式
+    # 暗色模式（黑夜）
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate            # 深色背景使用高级的石板灰
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到亮色模式
+
+# 导航菜单
 nav:
   - 首页: index.md
   - 玻璃文档: bolli.md
   - 七年级: 七年级.md
   - 初学 Markdown: 初学markdown.md
 
+# 扩展插件（保留你的配置并增强）
 markdown_extensions:
   - toc:
-      permalink: true
-  - tables
+      permalink: true          # 标题右侧鼠标悬停时出现链接锚点
+  - tables                     # 完美支持复杂的 Markdown 表格排版
   - attr_list
   - md_in_html
-  - admonition
+  - admonition                 # 支持 !!! note 提示框
+  - pymdownx.details           # 开启高阶扩展：支持点击展开/折叠的隐藏面板
+  - pymdownx.superfences       # 开启高阶扩展：支持代码块一键复制按钮
