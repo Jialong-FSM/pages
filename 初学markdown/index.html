@@ -1,0 +1,1671 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="您的名字">
+      
+      
+      
+        <link rel="prev" href="../%E4%B8%83%E5%B9%B4%E7%BA%A7/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>我的 Quarto 测试文档 - 玻璃资料网站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="玻璃资料网站" class="md-header__button md-logo" aria-label="玻璃资料网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            玻璃资料网站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              我的 Quarto 测试文档
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="玻璃资料网站" class="md-nav__button md-logo" aria-label="玻璃资料网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    玻璃资料网站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bolli.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    玻璃文档
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%83%E5%B9%B4%E7%BA%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    七年级
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初学 Markdown
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初学 Markdown
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标题二
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标题二
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>[TOC]
+<strong>你好</strong></p>
+<blockquote>
+<p>Guten Tag</p>
+</blockquote>
+<p><code>大`家`好</code></p>
+<p><ins>will be underlined</ins>
+<u>will be underlined</u></p>
+<h1 id="_1">标题一<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h3 id="_2">标题二<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>$1+1=2$</p>
+<p>区块链
+: block Chain</p>
+<h1 id="_3">标题一<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<blockquote>
+<h2 id="flight-to-your-heart">✈️ Flight to your heart!<a class="headerlink" href="#flight-to-your-heart" title="Permanent link">&para;</a></h2>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abc</td>
+<td>abc</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abc</td>
+<td>abc</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abc</td>
+<td>abc</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://static.scientificamerican.com/sciam/cache/file/7A715AD8-449D-4B5A-ABA2C5D92D9B5A21_source.png?w=1350">pohnpei</a></p>
+<blockquote>
+<p>[!IMPORTANT]
+zhege henzhongyao </p>
+<blockquote>
+<p>[!TIP]
+</p>
+</blockquote>
+</blockquote>
+<h6 id="_4">标题三<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h6>
+<blockquote>
+<p>[!CAUTION]</p>
+<p>love <strong>is</strong> bold
+bold <strong>is</strong> bold</p>
+</blockquote>
+<p>a<strong>pp</strong>le
+a__pp__le</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This is the first sentence of my indented paragraph.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the first sentence of my indented paragraph.
+a_pp_le 
+a<em>pp</em>le 
+a<strong><em>pp</em></strong>le 
+a<strong><em>pp</em></strong>le </p>
+<p><em>abc</em>
+阿斯顿发</p>
+<blockquote>
+<p>this is a blockquote
+isn't it interestinig?  </p>
+<blockquote>
+<p>Yes, it is indeed very funny.</p>
+</blockquote>
+<p>OK, good 
+==阿斯顿发==
+阿斯顿发
+阿斯顿发
+阿斯顿发</p>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=UVlNm1uS78c">https://www.youtube.com/watch?v=UVlNm1uS78c</a></p>
+<p><a href="https://www.youtube.com/watch?v=ECXkNmRMGHY"><img alt="看透川普" src="https://img.youtube.com/vi/ECXkNmRMGHY/0.jpg" /></a></p>
+<p><a href="https://www.google.com" target="_blank">谷歌网站</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>这是一个 note 提示块。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>First paragraph. <br> Second paragraph.</td>
+</tr>
+</tbody>
+</table>
+<p>1983/. good</p>
+<ul>
+<li>
+<ol>
+<li>hello</li>
+</ol>
+</li>
+<li>
+<ol>
+<li></li>
+</ol>
+</li>
+<li>25.</li>
+</ul>
+<p>&copy;</p>
+<ol>
+<li>
+<p>sdf </p>
+</li>
+<li>
+<p>this is  the first item</p>
+</li>
+<li>this is the second item</li>
+</ol>
+<p>third
+hello</p>
+<ul>
+<li>forth</li>
+<li>
+<p>2012/. asdfsfdf </p>
+</li>
+<li>
+<p>abc</p>
+</li>
+<li>234</li>
+<li>abc</li>
+<li>abc</li>
+<li>abc</li>
+<li>abc</li>
+</ul>
+<p>abc</p>
+<ol>
+<li>abc</li>
+<li>asdf </li>
+<li>asdf</li>
+<li>sdf</li>
+<li>234</li>
+<li>sdf </li>
+<li>asdf</li>
+<li>sdf</li>
+<li>sdf</li>
+<li>sdf </li>
+<li>sdf </li>
+<li>asdf </li>
+<li></li>
+</ol>
+<p><code>Use `code` in your Markdown file.</code></p>
+<pre><code>你好
+</code></pre>
+<pre><code class="language-python">你好
+baise
+</code></pre>
+<p>这是段内换行<br />
+看看这是什么效果</p>
+<p>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</p>
+<p><img alt="Engelbart" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" width="60%" /></p>
+<p><img src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" width="10%"></p>
+<p>哈哈<br />
+哈哈哈</p>
+<blockquote>
+<p>[!DANGER] 这是一段警告
+内容是关于什么的</p>
+</blockquote>
+<p>离开家阿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斯顿发离开家</p>
+<ol>
+<li>abcdefg  </li>
+<li>asdf<br></li>
+<li>asdfasdf</li>
+<li>
+<p>asdfasdfasdfasdf</p>
+</li>
+<li>
+<p>[x] asdfasdf</p>
+</li>
+</ol>
+<p>阿斯顿发水电费  阿斯顿发       阿斯顿发水电费     阿斯顿发水电费、阿斯顿发、阿斯顿发水电费、阿斯顿发
+阿斯顿发水电费阿斯顿发阿斯顿发
+阿斯顿发发生大幅度说阿斯顿发水电费阿斯顿发阿斯顿发阿斯顿阿斯顿发阿斯顿发自行车v去玩儿阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发</p>
+<p>阿斯顿发</p>
+<p>这是正常切换段落<br>
+哈哈哈哈
+这不是一样的吗？</p>
+<p>阿斯顿发  阿斯顿发  阿斯顿撒发的<br />
+阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发</p>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿斯顿发</td>
+<td></td>
+<td>阿斯顿发</td>
+<td></td>
+<td>阿斯顿发</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="abc">abc<a class="headerlink" href="#abc" title="Permanent link">&para;</a></h2>
+<p><a href="./image-4.png">tutor</a></p>
+<p><a href="./image-4.png">tutor</a></p>
+<p><a href="[link label]">clickalbe pseudo</a></p>
+<p><a href="http://www.youtube.com" title="鼠标悬停时的说明性文字">可点击的替代性文字</a></p>
+<p>~~你好~~</p>
+<p>~~这是一段删除线文字~~</p>
+<p><img alt="alt text" src="image-3.png" width="80%" /></p>
+<figure style="display: flex; justify-content: flex-start; margin: 1em 0;">
+  <div style="width: 30%; display: flex; flex-direction: column-reverse;">
+    <img src="image-3.png"{width="600px"} alt="snippaste" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 14px; color: gray; margin-top: 6px; margin-bottom: 6px; text-align: right;">iamcaption</figcaption>
+  </div>
+</figure>
+
+<p>:information_source: 本节说明系统的基本运行逻辑。</p>
+<p>:warning: 修改配置文件前，请先备份原始文件。</p>
+<p>:white_check_mark: 完成以上步骤后，即可重新启动服务。</p>
+<blockquote>
+<p>⚠ 注意：修改 <code>settings.json</code> 前，请先复制备份。</p>
+<p>ℹ 说明：本配置仅影响当前 VS Code 用户设置，不会修改系统设置。</p>
+<p>✓ 完成：保存文件后，重新打开 Markdown 预览窗口。
+&#x26A0; </p>
+</blockquote>
+<p>&#x2139; 说明
+&#x26A0; 注意
+&#x2713; 正确
+&#x2717; 错误
+&#x2192; </p>
+<pre><code class="language-md">```dataviewjs
+dv.paragraph(`
+~~~mermaid
+graph TD
+    A --&gt; B
+~~~
+`)
+```
+</code></pre>
+<blockquote>
+<p>abcdefg</p>
+<p>abcdefg
+good enough</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>hijklmnopq</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>rstuvwxyz</p>
+<blockquote>
+<p>haha</p>
+</blockquote>
+</blockquote>
+<pre><code>abcdefg
+hijiklmn
+hahaheihei
+</code></pre>
+<p>abc<code>abc</code>abc
+<code>;lkj nihaoya 你好呀</code></p>
+<pre><code class="language-python">def pring()
+pass
+</code></pre>
+<pre><code>ℹ 说明
+⚠ 注意
+✓ 正确 / 完成
+✗ 错误
+◆ 重点
+▸ 步骤
+→ 菜单路径 / 流程方向
+☑ 已完成
+☐ 待完成
+</code></pre>
+<blockquote>
+<p>ℹ <strong>说明</strong><br />
+这里解释某个功能的基本含义。</p>
+<p>⚠ <strong>注意</strong><br />
+这里提醒可能出错或需要谨慎操作的地方。</p>
+<p>✓ <strong>完成条件</strong><br />
+这里说明如何判断操作已经成功。</p>
+<p>✗ <strong>常见错误</strong><br />
+这里列出错误写法或错误操作。</p>
+<p>💡 <strong>建议</strong><br />
+这里给出更好的做法或经验。</p>
+<p>ℹ <strong>说明</strong><br />
+这里解释某个功能的基本含义。</p>
+<p>⚠ <strong>注意</strong><br />
+这里提醒可能出错或需要谨慎操作的地方。</p>
+<p>✓ <strong>完成条件</strong><br />
+这里说明如何判断操作已经成功。</p>
+<p>✗ <strong>常见错误</strong><br />
+这里列出错误写法或错误操作。</p>
+<p>💡 <strong>建议</strong><br />
+这里给出更好的做法或经验。</p>
+</blockquote>
+<p>✅</p>
+<blockquote>
+<p>ℹ <strong>说明</strong>  丆∅
+这里解释某个功能的基本含义。</p>
+<p>⚠ <strong>注意</strong><br />
+这里提醒可能出错或需要谨慎操作的地方。</p>
+<p>✓ <strong>完成条件</strong><br />
+这里说明如何判断操作已经成功。</p>
+<p>✗ <strong>常见错误</strong><br />
+这里列出错误写法或错误操作。</p>
+<p>💡 <strong>建议</strong><br />
+这里给出更好的做法或经验。</p>
+</blockquote>
+<p><strong>大家好</strong></p>
+<ul>
+<li>niao</li>
+<li>wohao</li>
+<li>
+<p>dajiahao</p>
+</li>
+<li>
+<p>niao</p>
+</li>
+<li>wohao</li>
+<li>
+<p>dajiahao</p>
+</li>
+<li>
+<p>niao</p>
+</li>
+<li>niao<ul>
+<li>niao</li>
+</ul>
+</li>
+</ul>
+<p><code>python {.line-numbers highlight=2}
+def test_print():
+  pass</code></p>
+<p>⚠️ 注意事项</p>
+<p>这是 {--需要删除的内容--}。</p>
+<p>:fa-hand-o-up</p>
+<p>:bell:
+:smile:
+:fa-weixin:</p>
+<table>
+<thead>
+<tr>
+<th>Column A</th>
+<th>Column B</th>
+<th>Column C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>haha</td>
+<td>C1</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>23</td>
+<td>C2</td>
+</tr>
+<tr>
+<td></td>
+<td>423</td>
+<td>C3</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>second</li>
+<li>third</li>
+</ol>
+<p>:fa-thumbs-down</p>
+<pre><code class="language-mermaid">flowchart TD
+    A[开始] --&gt; B[结束]
+</code></pre>
+<pre><code class="language-mermaid">gantt
+    title 维修工作计划
+    dateFormat  YYYY-MM-DD
+
+    section 准备阶段
+    现场检查        :a1, 2026-05-18, 1d
+    材料采购        :a2, after a1, 2d
+
+    section 实施阶段
+    现场维修        :a3, after a2, 2d
+    验收归档        :a4, after a3, 1d
+</code></pre>
+<p><i class="fa fa-info-circle"></i> 说明
+<i class="fa fa-exclamation-triangle"></i> 注意事项
+<i class="fa fa-check-circle"></i> 完成情况
+本项目已 {~~基本完成~&gt;顺利完成~~} 相关维修工作。</p>
+<pre><code>你好呀
+嘿嘿
+</code></pre>
+<pre><code class="language-mermaid">sequenceDiagram
+    participant Mic as 麦克风
+    participant Mixer as 调音台
+    participant STT as 语音识别
+    participant AI as ChatGPT润色翻译
+    participant Screen as 第二屏字幕
+
+    Mic-&gt;&gt;Mixer: 输入语音
+    Mixer-&gt;&gt;STT: 发送音频
+    STT-&gt;&gt;AI: 转写文本
+    AI-&gt;&gt;Screen: 显示中文字幕
+</code></pre>
+<p>阿斯顿发发生大幅度说</p>
+<pre><code>哈哈哈哈
+</code></pre>
+<p>哈哈</p>
+<p>这是 {++新增的内容++}。
+1. niao</p>
+<p><em>dazi</em>
+<em>dazi</em></p>
+<blockquote>
+<p>niao
+jushuo suoyi doushi zhende</p>
+</blockquote>
+<p>hahaha nini</p>
+<pre><code class="language-python">def test_codeblock()
+def test_codeblock():
+  pass
+</code></pre>
+<ul>
+<li>你好</li>
+<li>你好</li>
+<li>你好</li>
+<li>
+<h2 id="_5">你好<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+</li>
+</ul>
+<blockquote>
+<p>ℹ <strong>说明</strong><br />
+这里解释某个功能的基本含义。</p>
+<p>⚠ <strong>注意</strong><br />
+这里提醒可能出错或需要谨慎操作的地方。</p>
+<p>✓ <strong>完成条件</strong><br />
+这里说明如何判断操作已经成功。</p>
+<p>✗ <strong>常见错误</strong><br />
+这里列出错误写法或错误操作。</p>
+<p>💡 <strong>建议</strong><br />
+这里给出更好的做法或经验。</p>
+</blockquote>
+<p>你好  你好 <br>
+<strong>你好</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">abc</th>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+</tr>
+<tr>
+<td style="text-align: left;">234</td>
+<td>234</td>
+<td>234</td>
+<td>234</td>
+</tr>
+</tbody>
+</table>
+<p>~~delete~~</p>
+<p>:smile:
+: smile :
+你好
+哈哈哈哈
+2. 标题一
+===
+the bananas is tasty</p>
+<p>:smi_</p>
+<h2 id="_6">标题一<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h1 id="_7">你好呀<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<h1 id="hello-world">hello world<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h1>
+<h1 id="_8">加粗内容**<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
+<p><strong>加粗内容</strong>
+6. niao
+===</p>
+<pre><code>* niaoya
+</code></pre>
+<ul>
+<li>niaoya</li>
+<li>niaoya</li>
+<li>niaoya</li>
+<li>niaoya</li>
+</ul>
+<p><em><strong>你好</strong></em>
+你好</p>
+<p><em><strong>你好</strong></em></p>
+<h1 id="_9">粗体字<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
+<p>你好</p>
+<ol>
+<li>你好</li>
+<li>你好</li>
+<li>你好</li>
+<li>你好</li>
+<li>你好</li>
+<li>你好</li>
+<li>我们都是谁</li>
+<li>你们都是谁？<ol>
+<li>大家后  <ol>
+<li>你们好 1SDFSDFSDF</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<hr />
+<hr />
+<p><img alt="alt text" src="17429297_xl.jpg “good”" /></p>
+<p><img alt="截图" src="inspector-1.png" />
+<img alt="youtube" src="image.png" title="hello" /></p>
+<h1 id="8">8. 你好<a class="headerlink" href="#8" title="Permanent link">&para;</a></h1>
+<p>hallo
+<strong>abc</strong>
+<em>abc</em></p>
+<p>abcdeffjisdf<br />
+阿斯顿发发生大幅度说</p>
+<p>阿斯顿发水电费
+阿斯顿发撒地方
+阿斯顿发水电费</p>
+<p>引用变量：<a href="https://google.com">abc</a></p>
+<ul>
+<li>abc</li>
+<li>
+<ul>
+<li>abc</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>abc</li>
+</ul>
+</li>
+<li>
+<p>abc</p>
+</li>
+<li>
+<p>abc</p>
+</li>
+<li>
+<p>abc</p>
+</li>
+<li>
+<p>abc</p>
+</li>
+</ul>
+<hr />
+<hr />
+<p>women de mubiaoshi <a href="https://google.com">abc</a></p>
+<p><a href="http://www.google.com">http://www.google.com</a>
+<www.google.com></p>
+<pre><code class="language-python">def print_name():
+print(&quot;markdown&quot;)
+</code></pre>
+<p>'abc'</p>
+<pre><code>def test_print()
+</code></pre>
+<p>def test_print()</p>
+<p>sdf
+    sdf
+<code>niao</code>
+"niao"</p>
+<p>'''python
+  def print_name():
+  print("markdown")
+'''</p>
+<pre><code class="language-python">def test_codeblock()
+pass
+</code></pre>
+<pre><code>pipenv shell
+</code></pre>
+<p>pipenv install --skip-lock</p>
+<pre><code>def test_print():
+</code></pre>
+<blockquote>
+<p>pass
+<em>niaosdf</em>
+abc
+abc
+heiheihei</p>
+<blockquote>
+<p><strong>嘿嘿嘿嘿</strong>
+haha</p>
+</blockquote>
+</blockquote>
+<p><strong>haha</strong>
+abc</p>
+<blockquote>
+<p>niao
+niao
+abc</p>
+</blockquote>
+<p><strong><em>~~niao~~</em></strong></p>
+<p>\
+*
+!
+~~abc~~
+~~哈哈哈哈~~
+☺️❤️‍🔥Z∅ℇ∞
+niabcaoabc
+:shit:
+:abc
+:infinity:
+abc
+:cn:</p>
+<p><img alt="virtual photo" src="4. 虚拟效果图.png" /></p>
+<figure style="text-align: center; margin: 0;">
+  <img src="<4. 虚拟效果图.png>" alt="" width="40%" style="display: block; margin: 0 auto;">
+  <figcaption style="font-size: 20px; color: #f31717; margin-top: 0px;">Pohnpei State Government Building</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="<4. 虚拟效果图.png>" alt="" width="80%">
+  <figcaption style="font-size: 14px; color: #888; margin-top: 0px;">波纳佩州政府办公楼电脑效果图</figcaption>
+</figure>
+
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abc</td>
+<td>abc</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>你好</td>
+<td>我好</td>
+<td>大家好</td>
+<td>哈哈</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hello hello   hello</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>xingming lianling  gongzuoshijian  beizhu
+123 789 9 987
+asdf  asdf  sdf  sdf
+zcxv xcv zxcv asdf</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">xingming</th>
+<th style="text-align: right;">lianling</th>
+<th>gongzuoshijian</th>
+<th>beizhu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">123</td>
+<td style="text-align: right;">789</td>
+<td>9</td>
+<td>987</td>
+</tr>
+<tr>
+<td style="text-align: center;">asdf</td>
+<td style="text-align: right;">asdf</td>
+<td>sdf</td>
+<td>sdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">zcxv</td>
+<td style="text-align: right;">xcv</td>
+<td>zxcv</td>
+<td>asdf</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>哈哈</td>
+<td>哈哈</td>
+</tr>
+<tr>
+<td>哈哈</td>
+<td>哈哈</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>大家好</th>
+<th>你好呀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>鞋子的速度</td>
+<td>非常快</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Column A</td>
+<td>Column B</td>
+</tr>
+<tr>
+<td>---------</td>
+<td>----------</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>B1</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>B3</td>
+</tr>
+<tr>
+<td>鞋子</td>
+<td>衣服</td>
+</tr>
+<tr>
+<td>鞋子</td>
+<td>裤子</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Column A</th>
+<th>Column B</th>
+<th>Column C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打字</td>
+<td>B1</td>
+<td>C1</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>B2</td>
+<td>C2</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>B3</td>
+<td>C3  ｜</td>
+</tr>
+<tr>
+<td></td>
+<td>水电费</td>
+<td>水电费</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>table</p>
+<p>table</p>
+<p>| a | b |</p>
+<ul>
+<li>[ ] abc</li>
+<li>[x] abc</li>
+<li>[x] haha</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>abc</th>
+<th>abc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xianzai</td>
+<td>kaishi</td>
+<td>shuru</td>
+</tr>
+<tr>
+<td>bucuo</td>
+<td>jiushi</td>
+<td>bucuo</td>
+</tr>
+<tr>
+<td>haha</td>
+<td>heihei</td>
+<td>nini</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-Python">def print()
+pass
+</code></pre>
+<p>```python
+  def print_name():
+  print("markdown")</p>
+<pre><code>
+| abc | abc |
+| --- | --- |
+| abc | &amp;#124; |
+| abc | abc |
+| abc | abc |
+| abc | abc |
+
+| abc | abc |
+| --- | --- |
+| xyz | xyz |
+|     |     |
+
+H~2~O
+H^2^O
+
+    nihao
+    dazi de neirong 
+    chengixanchulai 
+
+</code></pre>
+<p>hahahah </p>
+<pre><code>
+    def print()
+    pass
+
+&gt; python print
+&gt;
+
+~~~python
+def print()
+~~~
+
+阿斯顿发
+
+---
+
+
+
+&lt;div style=&quot;display:flex; align-items:center; justify-content:center; margin:24px 0;&quot;&gt;
+  &lt;span style=&quot;flex:1; height:1px; background:#ccc;&quot;&gt;&lt;/span&gt;
+  &lt;img src=&quot;inspector.png&quot; alt=&quot;logo&quot; style=&quot;width:200px; margin:0 12px;&quot;&gt;
+  &lt;span style=&quot;flex:1; height:1px; background:#ccc;&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&gt; hello 
+
+`hello` 
+
+
+# 标题一
+abc
+
+# 标题一
+abc
+
+## 标题二
+abc
+
+## 标题二
+abc
+
+### 标题三
+abc
+
+### 标题三
+abc
+
+# 标题一
+abc
+
+## 标题二
+abc
+
+[heading 1](#标题一-1)
+[heading 1](#标题一-2)
+[heading 2](#标题二-1)
+[heading 2](#标题二-2)
+[heading 3](#标题三)
+[heading 3](#标题三-1)
+[heading 1](#标题一-4)
+[heading 2](#标题二-3)
+
+引用脚注
+xyz [^1]
+asdf
+asdf
+asdf
+asdf
+asdf [^1]
+asdf
+asdf
+asdf[^1]
+asdf
+asdf
+asdf[^2]
+asdf
+asdf
+asdf
+&gt; [!IMPORTANT]
+&gt; niao
+&gt; niao
+
+
+asdf
+asdf
+asdf
+asdf
+定义脚注
+&gt;[!NOTE]
+&gt; abc
+&gt; abc
+
+
+
+
+&lt;mark&gt;你是一个大傻逼&lt;/mark&gt;，说的就是==你==
+
+
+今天我们需要去现场检查 &lt;p style=&quot;color: #4ed012&quot;&gt;波纳佩政府办公楼&lt;/p&gt; 的弱电项目。
+
+今天我们需要去现场检查 &lt;mark style=&quot;color: #4ed012&quot;&gt;波纳佩政府办公楼&lt;/mark&gt; 的弱电项目。
+
+&lt;mark style=&quot;color: #4ed012&quot;&gt;nihaoniu&lt;/mark&gt; hahahah
+
+
+
+&lt;p style=&quot;color: #4ed012&quot;&gt;abc&lt;/p&gt; abc
+
+&lt;mark style=&quot;color: #d01235&quot;&gt;abc&lt;/mark&gt; abc
+
+
+&lt;mark style=&quot;color: #48d012&quot;&gt;abc&lt;/mark&gt; abc
+
+&lt;p style=&quot;color: #4ed012&quot;&gt;abc&lt;/p&gt; abc
+
+&lt;p style=&quot;background-color: yellow;&quot;&gt;abc&lt;/p&gt; abc
+
+&lt;mark style=&quot;background-color: yellow;&quot;&gt;abc&lt;/mark&gt; abc
+
+&lt;p style=&quot;color: #4ed012&quot;&gt;abc&lt;/p&gt; abc
+
+/* 定义一个标准的警告提示框 */
+.note-warning {
+    background-color: #f8d7da;
+    border-left: 5px solid #dc3545;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+&lt;div class=&quot;note-warning&quot;&gt;
+    **注意：** 现场设备调试前，务必确认地线已正确连接！
+&lt;/div&gt;
+
+上标：&lt;sup&gt;abc&lt;/sup&gt;
+
+下标：&lt;sub&gt;abc&lt;/sub&gt;
+
+&lt;u&gt;abc&lt;/u&gt;
+
+&lt;p style=&quot;font-family:helvetica&quot;&gt;abc&lt;/p&gt;
+&lt;p style=&quot;font-size:20px&quot;&gt;abcdd&lt;/p&gt;
+
+&lt;p style=&quot;font-family: 'Helvetica';&quot;&gt;abc&lt;/p&gt;
+
+&lt;p style=&quot;font-family:仿宋&quot;&gt;你好&lt;/p&gt;
+
+
+&lt;p style=&quot;font-size:40px&quot;&gt;大家好&lt;/p&gt;
+
+
+![波纳佩州政府办公楼](./5.%20虚拟效果图.png {width=&quot;20%&quot;}) 
+
+&lt;img src=&quot;./5.%20虚拟效果图.png&quot; alt=&quot;波纳佩州政府办公楼&quot; width=&quot;50%&quot;&gt;
+
+![波纳佩州政府办公楼](./5.%20虚拟效果图.png){width=&quot;90%&quot;}
+![波纳佩州政府办公楼](./5.%20虚拟效果图.png){width=&quot;60%&quot;}
+
+![波纳佩州政府办公楼](./5.%20虚拟效果图.png){width=&quot;600px&quot;}
+
+&lt;img src=&quot;./5.%20虚拟效果图.png&quot; width=&quot;10%&quot;&gt;
+
+&lt;img src=&quot;./5.%20虚拟效果图.png&quot; width=&quot;1000&quot;&gt; 
+
+figimg
+
+&lt;figure style=&quot;text-align: leftP; margin: 1em 0;&quot;&gt;
+  &lt;img src=&quot;./inspector.png&quot; alt=&quot;Image description&quot; style=&quot;width: 50%; height: auto;&quot;&gt;
+  &lt;figcaption style=&quot;font-size: 14px; color: red; margin-top: 6px;&quot;&gt;ROG NUC 2026&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure style=&quot;display: flex; flex-direction: column; align-items: flex-end; margin: 1em 0;&quot;&gt;
+  &lt;img src=&quot;./inspector.png&quot; alt=&quot;inspector Konan&quot; style=&quot;width: 60%; height: auto;&quot;&gt;
+  &lt;figcaption style=&quot;width: 100%; font-size: 18px; color: red; margin-top: 6px; margin-bottom: 6px; text-align: right;&quot;&gt;Image caption&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure style=&quot;display: flex; justify-content: flex-start; margin: 1em 0;&quot;&gt;
+  &lt;div style=&quot;width: 90%; display: flex; flex-direction: column;&quot;&gt;
+    &lt;img src=&quot;./inspector.png&quot; alt=&quot;wie geht es dir&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
+    &lt;figcaption style=&quot;font-size: 24px; color: gray; margin-top: 6px; margin-bottom: 6px; text-align: center;&quot;&gt;Alles Gute&lt;/figcaption&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;     
+
+&lt;figure style=&quot;display: flex; justify-content: flex-start; margin: 1em 0;&quot;&gt;
+  &lt;div style=&quot;width: 60%; display: flex; flex-direction: column-reverse;&quot;&gt;
+    &lt;img src=&quot;./inspector-1.png&quot; alt=&quot;Image description&quot; style=&quot;width: 100%; height: auto;&quot;&gt;
+    &lt;figcaption style=&quot;font-size: 14px; color: dark
+  Salmon; margin-top: 6px; margin-bottom: 6px; text-align: right;&quot;&gt;GREAT!&lt;/figcaption&gt;
+  &lt;/div&gt;
+&lt;/figure&gt; 
+
+&lt;div style=&quot;display:none&quot;&gt;abc&lt;/div&gt;
+
+&lt;!-- abc --&gt;
+
+[#] this is my notes
+
+[this is my notes]：#
+
+&lt;details&gt;&lt;summary&gt;&lt;strong&gt;this is a big title&lt;/strong&gt;&lt;/summary&gt;
+&lt;p&gt;
+
+***here are the detais of different contents***
+# Title 1
+## Title 2
+&lt;strong&gt;good&lt;/strong&gt;
+```python
+def print_hello():
+    print(&quot;hello&quot;)
+</code></pre>
+<blockquote>
+<p>Alles Gute
+</p>
+</details></p>
+</blockquote>
+<p>如果想要知道更多项目信息请查阅：<a href="http://www.cjic.cn" title="全球资源整合专家">公司网站</a></p>
+<p>感兴趣的话可以联系<a href="(这里是一段注释，由于没有被引用，它不会显示出来)">#</a></p>
+<details>
+<summary>可折叠的标题</summary>
+
+**被隐藏、被折叠的内容**
+
+<strong>BOLD</strong>
+
+## Heading 2
+
+
+<pre><code class="language-python">def print()
+print(hello world)
+</code></pre>
+
+
+- items 1
+- items 2
+- items 3
+</details>
+
+<h1 id="heading-1">heading 1<a class="headerlink" href="#heading-1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>天气如何</p>
+</blockquote>
+<h2 id="heading-2">heading 2<a class="headerlink" href="#heading-2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>心情如何</p>
+</blockquote>
+<h3 id="heading-3">heading 3<a class="headerlink" href="#heading-3" title="Permanent link">&para;</a></h3>
+<p>今天有新的收获吗？</p>
+<details><summary>待办事项</summary>
+
+- [x] nihaoniu
+- [ ] abc
+- [x] haha 
+- [x] heihei
+- [x] niubi
+</details>
+
+<p>imgur
+<img alt="alt text" src="image-1.png" /></p>
+<p>556</p>
+<p><img alt="nihao" src="" />
+<img alt="alt text" src="image-2.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
