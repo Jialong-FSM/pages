@@ -8,6 +8,7 @@ nav:
   - 首页: index.md
   - 玻璃文档: bolli.md
   - 七年级: 七年级.md
+  - 初学 Markdown: 初学markdown.md
 
 markdown_extensions:
   - toc:
