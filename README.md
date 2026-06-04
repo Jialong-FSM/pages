@@ -1,0 +1,2 @@
+# pages
+publish temporary notes
